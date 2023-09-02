@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SecurityServices": {
+    "SecServices": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/security-services",
+            "outputPath": "dist/sec-services",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "SecurityServices:build:production"
+              "browserTarget": "SecServices:build:production"
             },
             "development": {
-              "browserTarget": "SecurityServices:build:development"
+              "browserTarget": "SecServices:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SecurityServices:build"
+            "browserTarget": "SecServices:build"
           }
         },
         "test": {
@@ -102,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "54d37a8c-5b1f-4580-95b7-75633096d910"
+    "analytics": "b45da4db-8ea4-4ae7-8dc1-92c3f5d1186c"
   }
 }
